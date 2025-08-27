@@ -1,0 +1,72 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Lista pokemon desde API</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <!-- Fuente pixelada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+  <style>
+    input[type="text"], input[type="email"], input[type="number"],
+    input[type="password"], input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .hobbies {margin-top: 10px;}
+  </style>
+</head>
+
+<body style="grid-template-rows: 200px 1fr 200px;">
+  <div id="navbar"></div> <!-- Aquí se carga el navbar de "navPkm.js"-->
+
+  <div class="cajaTitulosForm">
+    <p class="jersey-10 tituloForm">Ayúdanos haciendo este formulario</p>
+    <p class="jersey-10 subTituloForm">Te prometo que será rápido
+      <img src="sources/pika_corriendo.gif" class="imgPokemon">
+    </p>
+  </div>
+
+  <form id="formulario">
+    <label for="Nombre" id="labelNombre">Nombre / Alias:</label>
+    <input type="text" id="Nombre" name="texto"/>
+    <label for="Email" id="labelEmail">Email de contacto:</label>
+    <input type="email" id="Email" name="texto" autocomplete="on"/>
+
+    <br><br>
+
+    <label id="labelPokemon">Pokemon favorito:
+    <input type="text" id="pokemonFavorito" name="texto"/>
+
+    <br>
+    <label for="comentario">Comentario opcional:</label>
+    <textarea id="comentario" name="comentario" rows="4" cols="54" style="margin-top: 6px;"></textarea>
+    <br>
+
+    <label>
+        <input type="checkbox" id="politicas"/>
+        Acepta las políticas de privacidad
+    </label>
+
+    <button type="submit" id="btnEnviar" disabled>Enviar</button>
+
+    <div class="contenedorImgForm">
+      <img src="sources/sprites/centro_mesa.png" class="imgForm">
+      <img src="sources/sprites/izquierda_mesa.png" class="imgForm">
+      <div class="parteAbajoForm"></div>
+      <img src="sources/sprites/izquierda_mesa.png" class="imgForm" style="transform: rotateY(180deg);">
+    </div>
+  </form>
+
+  <script src="JS/navPkm.js"></script>
+  <script>
+
+  </script>
+</body>
