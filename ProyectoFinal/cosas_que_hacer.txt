@@ -1,4 +1,0 @@
-Preguntas frecuentes
-modo oscuro
-formulario
-equipoLleno(){}
