@@ -1,0 +1,45 @@
+/* FOOTER */
+#footer {
+  grid-area: 3 / 1 / 4 / 3;
+  background-color: #af4c4c;
+  color: #000;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  background: repeat-x
+    url('/sources/fondoFooter.png')
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 300px;
+  height: 91px;
+}
+.footer-col p {
+  text-align: center;
+  margin: 12px 0 0 0;
+  font-size: 33px;
+}
+.footer-col ul {
+  padding-left: 50px;
+  max-width: 100%;
+  margin: 0;
+}
+.footer-col ul li {
+  position: relative;
+  margin: 0;
+}
+.footer-col a {
+  color: #111;
+  text-decoration: none;
+  font-size: 25px;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+  color: orange;
+}
