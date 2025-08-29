@@ -53,6 +53,7 @@ fetch("components/navPkm.html")
     if(comprobacionEquipo != null) {
       team.addEventListener("click", () => {cambioPagina("team")});
     } else {
+      team.style.color = "#aaa";
       team.addEventListener("click", () => {alert("No tienes un equipo creado!!");});
     }
 
