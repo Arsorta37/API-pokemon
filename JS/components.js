@@ -68,7 +68,8 @@ fetch("components/navPkm.html")
     } else {apagada.style.display = "none";}
 
     // Para el modo oscuro del home
-    if (window.location.pathname == "/index.html") {
+    if (window.location.pathname == "/index.html"
+     || window.location.pathname == "/") {
       const fondoHome = document.getElementById("fondoHome");
       if (document.body.classList.contains("oscuro")) {
         fondoHome.style.backgroundImage = "url('/sources/fondo_home_noche.jpg')";
@@ -83,7 +84,8 @@ fetch("components/navPkm.html")
       document.body.classList.toggle("oscuro");
       grados += 720; // 3 vueltas y media por clic
       bombilla.style.transform = `rotate(${grados}deg)`;
-      if (window.location.pathname == "/index.html") {
+      if (window.location.pathname == "/index.html"
+       || window.location.pathname == "/") {
         // Para el home
         tiempo++;
         fondoHome.style.opacity = "1";
