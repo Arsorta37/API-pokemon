@@ -7,8 +7,6 @@ const paginasPosibles = {
   form: "form.html?"
 };
 
-var tiempo = 1;
-
 function cambioPagina(pagina) {
   let searchIDs = "";
   if(searchParams.get("IDs") != null){searchIDs = "IDs=" + searchParams.get("IDs");}
@@ -73,8 +71,10 @@ fetch("components/navPkm.html")
       const fondoHome = document.getElementById("fondoHome");
       if (document.body.classList.contains("oscuro")) {
         fondoHome.style.backgroundImage = "url('/sources/fondo_home_noche.jpg')";
+        var tiempo = 0;
       } else {
         fondoHome.style.backgroundImage = "url('/sources/fondo_home_dia.jpg')";
+        var tiempo = 1;
       }
     }
 
