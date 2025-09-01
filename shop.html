@@ -1,0 +1,68 @@
+<!-- shop_Pkm.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tienda pokemon desde API</title>
+  <link rel="shortcut icon" href="sources/Poke_pixelada.png">
+
+  <link rel="stylesheet" type="text/css" href="CSS/shop.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/navPkm.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/footerPkm.css"/>
+
+  <!-- Fuente pixelada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+  <style>@media (max-width: 777px) {#footer {display: none;}}</style>
+</head>
+
+<body>
+  <div id="navbar"><!-- Aquí se carga el navbar de "navPkm.js"--></div>
+  <div id="footer"><!-- Aquí se carga el footer de "footerPkm.js"--></div>
+
+  <!-- PÁGINA PRINCIPAL -->
+  <p id="tituloTienda" class="jersey-10">Crea tu propio equipo (Presupuesto: 1500€)</p>
+
+  <div id="pokemons">
+    <!-- Aquí se cargan todos los pokemons-->
+    <div id="pokeball">
+      <img src="sources/Poke_pixelada.png" alt="Tardará unos segundos" class="girar">
+      <p class="jersey-10" style="font-size: 40px;">Cargando Pokémons...</p>
+    </div>
+    <div id="finTienda">
+      <img src="/sources/DetectivePikachu.png" class="imgPokemon">
+      <p class="jersey-10">Parece que no hay más pokemons que elegir, Pikachu seguirá buscando</p>
+      <img src="/sources/DetectivePikachuConfundido.png" class="imgPokemon">
+    </div>
+  </div>
+
+  <!-- MENÚ DE LA DERECHA -->
+  <div id="equipo">
+    <p id="numPkmsEquipo" class="jersey-10">0 / 6</p>
+    <p id="total" class="jersey-10">Total: 0€</p>
+    <button id="crearEquipo" class="jersey-10">Crear equipo</button>
+    <button id="eliminarEquipo"><img src="sources/trash.png"></button>
+  </div>
+
+  <!-- Aviso antes de eliminar -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="closeX close">&times;</span>
+      <h2>¡¿Seguro que quieres eliminar el equipo?!</h2>
+      <p>Una vez eliminado no podrás recuperarlo.</p>
+      <img src="sources/pika_triste.gif" alt="Pikachu triste">
+      <div class="botonesModal">
+        <button class="close closeAbajo jersey-10">Cancelar</button>
+        <button id="eliminarDelTodo" class="jersey-10">Eliminar >:(</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/components.js"></script>
+  <script src="JS/shop&API.js"></script>
+</body>
+</html>

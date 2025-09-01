@@ -1,0 +1,68 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Formulario pokemon</title>
+  <link rel="shortcut icon" href="sources/Poke_pixelada.png">
+
+  <link rel="stylesheet" type="text/css" href="CSS/form.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/navPkm.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/footerPkm.css"/>
+
+  <!-- Fuente pixelada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="navbar"><!-- Aquí se carga el navbar de "navPkm.js"--></div>
+  <div id="footer"><!-- Aquí se carga el footer de "footerPkm.js"--></div>
+
+  <div class="cajaTitulosForm">
+    <p class="jersey-10 tituloForm">Ayúdanos haciendo este formulario</p>
+    <p class="jersey-10 subTituloForm">Te prometo que será rápido
+      <img src="sources/pika_corriendo.gif" class="imgPokemon" style="height: 32px; width: 50px;">
+    </p>
+  </div>
+
+  <form id="formulario" class="jersey-10">
+    <label for="Nombre" id="labelNombre">Nombre / Alias:</label>
+      <input type="text" id="Nombre" name="texto"/>
+
+    <label for="Email" id="labelEmail">Email de contacto:</label>
+      <input type="email" id="Email" name="texto" autocomplete="on"/>
+
+    <br><br>
+
+    <label for="pokemonFavorito" id="labelpokemonFavorito">Pokemon favorito:</label>
+      <input type="text" id="pokemonFavorito" name="texto" minlength="4"/>
+
+    <label for="PrecioEquipo" id="labelPrecioEquipo">Precio del equipo creado (€):</label>
+      <input type="number" id="PrecioEquipo" step=".01" placeholder="Si no has hecho un equipo deja este campo vacio"/>
+
+    <br><br>
+
+    <label for="comentario">Comentario opcional:</label>
+      <textarea id="comentario" name="comentario" rows="4" cols="54" style="margin-top: 6px;"></textarea>
+
+    <br><br>
+
+    <label><input type="checkbox" id="politicas"/> Acepto las políticas de privacidad</label>
+
+    <button type="submit" id="btnEnviar" disabled>Enviar</button>
+
+    <div class="contenedorImgForm">
+      <img src="sources/sprites/centro_mesa.png" class="imgFormCentro">
+      <img src="sources/sprites/izquierda_mesa.png" class="imgFormIzq">
+      <div class="abajoForm"></div>
+      <img src="sources/sprites/izquierda_mesa.png" class="imgFormDer">
+    </div>
+  </form>
+
+  <script src="JS/components.js"></script>
+  <script src="JS/form.js"></script>
+</body>

@@ -1,0 +1,54 @@
+html, body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  width: 100%;
+  min-height: calc(100vh - 53px);
+  height: 100%;
+  margin-top: 54px;
+  font-family: Arial, sans-serif;
+  transition: background-color 1s ease;
+  display: grid;
+  grid-template-columns: 1fr 244px;
+  grid-template-rows: 125px 1fr 182px;
+  overflow: hidden;
+}
+
+.jersey-10 { /* Fuente pixelada */
+  font-family: "Jersey 10", sans-serif;
+  font-style: normal;
+}
+
+.imgPokemon {
+  max-height: 96px;
+  max-width: 96px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.oscuro {
+  background-color: #333;
+  color: white;
+}
+
+.error {
+  color: red !important;
+  animation-name: error;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+  animation-duration: 0.2s;
+  transition: all 0.05s ease-in-out;
+}
+
+@keyframes error {
+  0% {transform: translateX(-5px);
+  } 50% {transform: translateX(5px);
+  } 100% {transform: translateX(-5px);}
+}
+
+@media (max-width: 1053px) {html {overflow-y: visible;}}
