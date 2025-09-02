@@ -20,7 +20,7 @@ body {
 .pikaSaludo {
   position: absolute;
   width: 200px;
-  bottom: 0;
+  bottom: -6px;
   left: 30px;
 }
 .chansey {
