@@ -19,7 +19,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   column-gap: 1rem;
   row-gap: 1rem;
-  margin: auto;
+  margin: 0 auto 50px auto;
   margin-top: 0;
   width: fit-content;
   padding: 10px;
